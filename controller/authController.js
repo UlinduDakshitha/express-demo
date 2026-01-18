@@ -40,6 +40,7 @@ exports.register = async (req, res) => {
   }
 };
 
+
 // Login existing user
 exports.login = (req, res) => {
   const { email, password } = req.body;
