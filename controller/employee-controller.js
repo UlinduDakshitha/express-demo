@@ -15,6 +15,7 @@ const saveEmployee=(req,res)=>{
     })   
 }
 
+
 //get all employee data from database
 const getAllEmployees = (req, res) => {
     connection.query('SELECT id, name, age, salary FROM employee', (err, results) => {
