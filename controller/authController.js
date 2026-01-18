@@ -12,6 +12,7 @@ exports.register = async (req, res) => {
       return res.status(400).json({ message: 'Email and password are required' });
     }
 
+    
     const hashed = await bcrypt.hash(password, 10);
 
     const sql = 'INSERT INTO users (email, password) VALUES (?, ?)';
